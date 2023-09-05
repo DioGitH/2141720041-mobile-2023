@@ -1,6 +1,4 @@
-# Pemrograman Mobile - Pertemuan 1
-
-Project Hello World 
+# Pemrograman Mobile - Pertemuan 2
 
 NIM : 2141720041
 
