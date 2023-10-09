@@ -7,7 +7,7 @@ import 'package:hello_world/basic_widgets/loading_cupertino.dart';
 import 'package:hello_world/basic_widgets/scaffold_widget.dart';
 
 void main() {
-  runApp(const MyInputSelectionWidget());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -111,7 +111,8 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const MyInputSelectionWidget(),
+            // const MyInputSelectionWidget(),
+            const Text('Maulidio Farhan Rizkullah'),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,

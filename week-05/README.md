@@ -21,12 +21,18 @@ KELAS : 3F
 ![ss5](hello_world/images/p2l11.png)
 
 ![ss6](hello_world/images/p2l12.png)
+- Via smartphone
+![ss6](hello_world/images/p2l12hp.jpg)
+![vid](hello_world/gif/p2.gif)
 
 ## Praktikum 3
 ### Langkah 1
 ![ss7](hello_world/images/p3l1.png)
 
 ![ss8](hello_world/images/p3l1debug.png)
+- Via smartphone
+![ss6](hello_world/images/p3l1hp.jpg)
+![vid](hello_world/gif/p3l1.gif)
 
 ### Langkah 2
 ![ss9](hello_world/images/p3l2.png)
@@ -34,25 +40,43 @@ KELAS : 3F
 ![ss10](hello_world/images/p3l2logo.png)
 
 ![ss11](hello_world/images/p3l2hasil.png)
+- Via smartphone
+![ss6](hello_world/images/p3l2hp.jpg)
+![vid](hello_world/gif/p3l3.gif)
+
 
 ## Praktikum 4
 ### Langkah 1
 ![ss12](hello_world/images/p4l1.png)
+- Via smartphone
+![vid](hello_world/gif/p4l1.gif)
 
 ### Langkah 2
 ![ss13](hello_world/images/p4l2.png)
 
+- Via smartphone
+![ss6](hello_world/images/p4l2hp.jpg)
+
 ### Langkah 3
 ![ss14](hello_world/images/p4l3.png)
 
+- Via smartphone
+![ss6](hello_world/images/p4l3hp.jpg)
+
 ### Langkah 4
 ![ss15](hello_world/images/p4l4.png)
+- Via smartphone
+![vid](hello_world/gif/p4l4.gif)
 
 ### Langkah 5
 ![ss16](hello_world/images/p4l5.png)
+- Via smartphone
+![vid](hello_world/gif/p4l5.gif)
 
 ### Langkah 6
 ![ss17](hello_world/images/p4l6.png)
+- Via smartphone
+![vid](hello_world/gif/p4l6.gif)
 
 ## Tugas
 
@@ -98,3 +122,8 @@ KELAS : 3F
 ![sstugas3](tugas_codelab/images/liked_page.png)
 
 ![sstugas3](tugas_codelab/images/liked_page2.png)
+
+### Hasil Akhir
+- Via smartphone
+![ss6](hello_world/images/tugas.jpg)
+![vid](hello_world/gif/tugas.gif)
