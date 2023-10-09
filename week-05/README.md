@@ -42,7 +42,6 @@ KELAS : 3F
 ![ss11](hello_world/images/p3l2hasil.png)
 - Via smartphone
 ![ss6](hello_world/images/p3l2hp.jpg)
-![vid](hello_world/gif/p3l3.gif)
 
 
 ## Praktikum 4
@@ -62,6 +61,7 @@ KELAS : 3F
 
 - Via smartphone
 ![ss6](hello_world/images/p4l3hp.jpg)
+![vid](hello_world/gif/p3l3.gif)
 
 ### Langkah 4
 ![ss15](hello_world/images/p4l4.png)
