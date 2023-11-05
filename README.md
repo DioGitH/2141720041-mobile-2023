@@ -16,3 +16,7 @@ NIM: 2141720041
 [Pertemuan 5](https://github.com/DioGitH/2141720041-mobile-2023/tree/main/week-05)
 
 [Pertemuan 7](https://github.com/DioGitH/2141720041-mobile-2023/tree/main/week-07)
+
+[Pertemuan 8](https://github.com/DioGitH/2141720041-mobile-2023/tree/main/week-08)
+
+[Pertemuan 10](https://github.com/DioGitH/2141720041-mobile-2023/tree/main/week-10)
