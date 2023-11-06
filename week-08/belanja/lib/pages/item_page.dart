@@ -1,4 +1,9 @@
 import 'package:belanja/models/item.dart';
+import 'package:belanja/widgets/bottom_navbar.dart';
+import 'package:belanja/widgets/image_hero.dart';
+import 'package:belanja/widgets/name.dart';
+import 'package:belanja/widgets/price.dart';
+import 'package:belanja/widgets/stars.dart';
 import 'package:flutter/material.dart';
 
 class ItemPage extends StatelessWidget {
@@ -7,42 +12,6 @@ class ItemPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final args = ModalRoute.of(context)!.settings.arguments as Item;
-
-    Widget price = Container(
-      padding: EdgeInsets.all(4),
-      child: Text(
-        'Rp ' + args.price.toString(),
-        style: TextStyle(fontSize: 30),
-      ),
-    );
-
-    Widget name = Container(
-      child: Text(args.name,
-          style: TextStyle(fontWeight: FontWeight.w500, fontSize: 30)),
-    );
-
-    Widget image = Hero(
-      tag: args.picture,
-      child: Container(
-        padding: EdgeInsets.all(20),
-        child: Image.asset(
-          args.picture,
-          width: 300,
-          height: 300,
-        ),
-      ),
-    );
-
-    int count = 0;
-    List<Widget> stars = [];
-    while (count < args.rate) {
-      stars.add(Icon(Icons.star));
-      count++;
-    }
-
-    Widget rating = Row(
-      children: stars,
-    );
 
     return Scaffold(
       appBar: AppBar(
@@ -54,10 +23,10 @@ class ItemPage extends StatelessWidget {
         children: [
           Column(
             children: [
-              image,
+              ImageHeroWidget(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [name, price],
+                children: [Name(), Price()],
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -65,7 +34,7 @@ class ItemPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Text('Rating: '),
-                    rating,
+                    StarsWidget(),
                   ],
                 ),
               ),
@@ -77,24 +46,7 @@ class ItemPage extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: Container(
-        padding: EdgeInsets.all(8),
-        height: 70,
-        child: Row(
-          children: [
-            Icon(
-              Icons.chat,
-              size: 60,
-            ),
-            Expanded(
-              child: ElevatedButton(
-                onPressed: () {},
-                child: Text('Masukkan Keranjang'),
-              ),
-            ),
-          ],
-        ),
-      ),
+      bottomNavigationBar: BottomNavbarWidget(),
     );
   }
 }
