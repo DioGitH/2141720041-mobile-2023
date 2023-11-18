@@ -40,3 +40,8 @@ Future getNumber digunakan untuk membuat objek Completer baru yang kemudian mema
 ![soal6](docs/p3n6.gif)
 
 Pada hasil tidak menunjukkan perbedaan signifikan tetapi pada langkah 5-6, calculate2 menggunakan try catch untuk menangani exception. Jika terjadi exception, completer.completeError({}); akan dipanggil.
+
+## Praktikum 4
+
+### Soal 7
+![soal7](docs/p4n7.gif)
