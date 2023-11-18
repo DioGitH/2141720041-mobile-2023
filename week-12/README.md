@@ -45,3 +45,6 @@ Pada hasil tidak menunjukkan perbedaan signifikan tetapi pada langkah 5-6, calcu
 
 ### Soal 7
 ![soal7](docs/p4n7.gif)
+
+### Soal 8
+FutureGroup dapat menambahkan beberapa Future ke dalam group untuk diproses sehingga lebih bersifat dinamis. Sedangkan Future.wait, isi didalam future sudah bersifat tetap, jadi jika ingin menambahkan harus secara manual, tidak seperti FutureGroup yang menggunakan add untuk menambahkan future yang mau dijalankan.

@@ -43,7 +43,13 @@ class _FuturePageState extends State<FuturePage> {
     futureGroup.add(returnThreeAsync());
     futureGroup.close();
 
-    futureGroup.future.then((List<int> value) {
+    final futures = Future.wait<int>([
+      returnOneAsync(),
+      returnTwoAsync(),
+      returnThreeAsync(),
+    ]);
+
+    futures.then((List<int> value) {
       int total = 0;
       for (var element in value) {
         total += element;
