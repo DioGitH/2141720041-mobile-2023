@@ -22,6 +22,17 @@ KELAS : 3F
  substring digunakan untuk mendapatkan bagian tertentu dari suatu string berdasarkan indeks awal dan akhir. Sedangkan catchError digunakan untuk menangani dan memproses error yang terjadi selama eksekusi operasi asynchronous.
 
 ## Praktikum 2
-![soal3](docs/p2n4.gif)
+
+### Soal 4
+![soal4](docs/p2n4.gif)
 
 Pada langkah 1 berisi 3 method Future<int> yang masing masing berfungsi mengembalikan nilai setelah menunggu selama 3 detik menggunakan Future.delayed. Sedangkan pada langkah 2 digunakan untuk menghitung jumlah nilai dari ketiga fungsi sebelumnya yang dipanggil. hal ini akan memakan waktu selama total 9 detik karena masing masing dari fungsi langkah 1 memiliki delay 3 detik, jadi butuh waktu total 9 detik untuk memperolah hasil dari pemanggilan fungsi count
+
+## Praktikum 3
+
+### Soal 5
+![soal5](docs/p3n5.gif)
+
+Future getNumber digunakan untuk membuat objek Completer baru yang kemudian memanggil fungsi calculate yang digunakan untuk melakukan perhitungan dengan durasi 5 detik dan mengatur nilai completer menjadi 42 yang selanjutnya mengembalikan hasil Future dari Completer
+
+
