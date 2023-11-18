@@ -53,3 +53,6 @@ FutureGroup dapat menambahkan beberapa Future ke dalam group untuk diproses sehi
 
 ### Soal 9
 ![soal9](docs/p5n9.gif)
+
+### Soal 10
+Pada handleError(), jika ada exception yang dihasilkan returnError(), catch akan menangkap dan setState akan mengupdate state dengan pesan error, finally akan tetap jalan meskipun ada exception. Pada fungsi returnError(), Future menjalankan operasi asinkron yang kemudian menjalankan Exception setelah dilakukan delay selama 2 detik.
