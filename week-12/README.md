@@ -65,3 +65,10 @@ Pada handleError(), jika ada exception yang dihasilkan returnError(), catch akan
 ![soal12](docs/p6n12.gif)
 
 Ketika Geolocator.getCurrentPosition() dipanggil, browser akan menggunakan fungsi geolokasi browser dan memberikan hasil koordinat simulasi. library geolocator otomatis menggunakan API geolokasi HTML5 yang tersedia di browser untuk mendapatkan koordinat GPS
+
+## Praktikum 7
+
+### Soal 13
+![soal13](docs/p7n13.gif)
+
+tidak ada perbedaan UI karena masih menggunakan layout yang sama. Pada kode sebelumnya, variabel myPosition digunakan langsung dalam widget myWidget, sedangkan pada kode ini menggunakan FutureBuilder untuk membuat widget berdasarkan status future. Hasil dari pemanggilan getPosition() disimpan pada variabel position yang digunakan sebagai future pada FutureBuilder. 
