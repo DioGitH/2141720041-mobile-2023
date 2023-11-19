@@ -77,3 +77,10 @@ tidak ada perbedaan UI karena masih menggunakan layout yang sama. Pada kode sebe
 ![soal14](docs/p7n14.gif)
 
 Tidak ada perbedaan UI karena hanya menambahkan errorhandling, perbedaan akan terlihat jika terjadi kesalahan dan akan menampilkan teks kesalahan.
+
+## Praktikum 8
+
+### Soal 16
+![soal16](docs/p8n16.gif)
+
+Setiap button salah 1 warna di klik, maka akan merubah warna dari halaman sebelumnya, hal ini karena Navigation.pop() pada masing masing button berisi parameter color yang telah ditentukan pada button tersebut sehingga ketika di klik maka Navigation.pop() akan merubah warna background sesuai button warna yang di klik.
