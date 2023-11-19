@@ -56,3 +56,12 @@ FutureGroup dapat menambahkan beberapa Future ke dalam group untuk diproses sehi
 
 ### Soal 10
 Pada handleError(), jika ada exception yang dihasilkan returnError(), catch akan menangkap dan setState akan mengupdate state dengan pesan error, finally akan tetap jalan meskipun ada exception. Pada fungsi returnError(), Future menjalankan operasi asinkron yang kemudian menjalankan Exception setelah dilakukan delay selama 2 detik.
+
+## Praktikum 6
+
+![langkah7](docs/p6l7.png)
+
+### Soal 12
+![soal12](docs/p6n12.gif)
+
+Ketika Geolocator.getCurrentPosition() dipanggil, browser akan menggunakan fungsi geolokasi browser dan memberikan hasil koordinat simulasi. library geolocator otomatis menggunakan API geolokasi HTML5 yang tersedia di browser untuk mendapatkan koordinat GPS

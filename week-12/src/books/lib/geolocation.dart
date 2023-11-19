@@ -10,6 +10,7 @@ class LocationScreen extends StatefulWidget {
 
 class _LocationScreenState extends State<LocationScreen> {
   String myPosition = '';
+
   @override
   void initState() {
     super.initState();
@@ -24,15 +25,19 @@ class _LocationScreenState extends State<LocationScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final myWidget =
+        myPosition == '' ? const CircularProgressIndicator() : Text(myPosition);
+
     return Scaffold(
       appBar: AppBar(title: const Text('Dio')),
-      body: Center(child: Text(myPosition)),
+      body: Center(child: myWidget),
     );
   }
 
   Future<Position> getPosition() async {
     await Geolocator.requestPermission();
     await Geolocator.isLocationServiceEnabled();
+    await Future.delayed(const Duration(seconds: 3));
     Position? position = await Geolocator.getCurrentPosition();
     return position;
   }
