@@ -72,3 +72,8 @@ Ketika Geolocator.getCurrentPosition() dipanggil, browser akan menggunakan fungs
 ![soal13](docs/p7n13.gif)
 
 tidak ada perbedaan UI karena masih menggunakan layout yang sama. Pada kode sebelumnya, variabel myPosition digunakan langsung dalam widget myWidget, sedangkan pada kode ini menggunakan FutureBuilder untuk membuat widget berdasarkan status future. Hasil dari pemanggilan getPosition() disimpan pada variabel position yang digunakan sebagai future pada FutureBuilder. 
+
+### Soal 14
+![soal14](docs/p7n14.gif)
+
+Tidak ada perbedaan UI karena hanya menambahkan errorhandling, perbedaan akan terlihat jika terjadi kesalahan dan akan menampilkan teks kesalahan.
