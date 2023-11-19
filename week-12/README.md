@@ -84,3 +84,10 @@ Tidak ada perbedaan UI karena hanya menambahkan errorhandling, perbedaan akan te
 ![soal16](docs/p8n16.gif)
 
 Setiap button salah 1 warna di klik, maka akan merubah warna dari halaman sebelumnya, hal ini karena Navigation.pop() pada masing masing button berisi parameter color yang telah ditentukan pada button tersebut sehingga ketika di klik maka Navigation.pop() akan merubah warna background sesuai button warna yang di klik.
+
+## Praktikum 9
+
+### Soal 17
+![soal17](docs/p9n17.gif)
+
+Sama seperti praktikum sebelumnya, setiap button memiliki Navigation.pop() yang akan merubah warna sesuai dengan parameter color yang telah ditetapkan pada masing masing button, perbedaan nya hanya pada praktikum ini menggunakan AlertDialog() yang akan memunculkan alert setiap button change color dan akan memunculkan 3 textbutton yang masing masing berisi Navigation.pop().
