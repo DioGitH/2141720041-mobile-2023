@@ -7,3 +7,10 @@ NAMA : MAULIDIO FARHAN RIZKULLAH
 ABSEN : 19
 
 KELAS : 3F
+
+## Praktikum 1
+
+### Soal 3
+yield* digunakan dalam fungsi generator untuk menggabungkan atau mentebar nilai-nilai dari suatu terable ke dalam iterable yang sedang dibuat.
+
+fungsi getColors menghasilkan suatu Stream<Color> yang mengeluarkan warna-warna dari daftar colors pada interval waktu satu detik menggunakan Stream.periodic
