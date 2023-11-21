@@ -17,3 +17,7 @@ fungsi getColors menghasilkan suatu Stream<Color> yang mengeluarkan warna-warna 
 
 ### Soal 4
 ![soal4](docs/p1n4.gif)
+
+### Soal 5
+
+pada penggunaan await for, changeColor akan menunggu setiap peristiwa sebelum melanjutkan ke peristiwa berikutnya. Sedangkan pada penggunaan listen, kode bisa melanjutkan eksekusi tanpa menunggu peristiwa selanjutnya
