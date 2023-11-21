@@ -14,3 +14,6 @@ KELAS : 3F
 yield* digunakan dalam fungsi generator untuk menggabungkan atau mentebar nilai-nilai dari suatu terable ke dalam iterable yang sedang dibuat.
 
 fungsi getColors menghasilkan suatu Stream<Color> yang mengeluarkan warna-warna dari daftar colors pada interval waktu satu detik menggunakan Stream.periodic
+
+### Soal 4
+![soal4](docs/p1n4.gif)
