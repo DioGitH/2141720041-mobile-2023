@@ -1,0 +1,9 @@
+# Pemrograman Mobile - Pertemuan 13
+
+NIM : 2141720041
+
+NAMA : MAULIDIO FARHAN RIZKULLAH
+
+ABSEN : 19
+
+KELAS : 3F
