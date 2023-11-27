@@ -4,6 +4,10 @@ import 'dart:async';
 class NumberStream {
   final StreamController<int> controller = StreamController<int>();
 
+  // addError() {
+  //   controller.sink.addError('error');
+  // }
+
   void addNumberToSink(int newNNumber) {
     controller.sink.add(newNNumber);
   }
