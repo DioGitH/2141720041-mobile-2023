@@ -33,6 +33,7 @@ class _StreamHomePageState extends State<StreamHomePage> {
   Color bgColor = Colors.blueGrey;
   late ColorStream colorStream;
   late StreamTransformer transformer;
+  late StreamSubscription subscription;
 
   int lastNumber = 0;
   late StreamController numberStreamCOntroller;
@@ -65,30 +66,54 @@ class _StreamHomePageState extends State<StreamHomePage> {
         },
         handleDone: (sink) => sink.close());
 
-    stream.transform(transformer).listen((event) {
+    // stream.transform(transformer).listen((event) {
+    //   setState(() {
+    //     lastNumber = event;
+    //   });
+    // }).onError((error) {
+    //   setState(() {
+    //     lastNumber = -1;
+    //   });
+    // });
+    subscription = stream.listen((event) {
       setState(() {
         lastNumber = event;
       });
-    }).onError((error) {
+    });
+    subscription.onError((error) {
       setState(() {
         lastNumber = -1;
       });
+    });
+    subscription.onDone(() {
+      print('OnDone was called');
     });
     super.initState();
     // colorStream = ColorStream();
     // changeColor();
   }
 
+  void stopStream() {
+    numberStreamCOntroller.close();
+  }
+
   @override
   void dispose() {
-    numberStreamCOntroller.close();
+    // numberStreamCOntroller.close();
+    subscription.cancel();
     super.dispose();
   }
 
   void addRandomNumber() {
     Random random = Random();
     int myNum = random.nextInt(10);
-    numberStream.addNumberToSink(myNum);
+    if (!numberStreamCOntroller.isClosed) {
+      numberStream.addNumberToSink(myNum);
+    } else {
+      setState(() {
+        lastNumber = -1;
+      });
+    }
     // numberStream.addError();
   }
 
@@ -110,6 +135,10 @@ class _StreamHomePageState extends State<StreamHomePage> {
             ElevatedButton(
               onPressed: () => addRandomNumber(),
               child: Text('New Random Number'),
+            ),
+            ElevatedButton(
+              onPressed: () => stopStream(),
+              child: Text('Stop Subcription'),
             ),
           ],
         ),

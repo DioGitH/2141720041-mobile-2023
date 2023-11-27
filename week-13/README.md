@@ -40,3 +40,9 @@ method addError() digunakan untuk menambahkan pesan error ke dalam sink yang ter
 ![soal8](docs/p3n8.gif)
 pada langkah 1-3 menunjukkan penggunaan StreamTransformer yang digunakan untuk mengubah nilai dalam aliran data numerik dengan mengkalikannya dengan 10, serta memberikan penanganan error untuk mengatasi error pada proses transformasi.
 
+## Praktikum 4
+
+### Soal 9
+![soal9](docs/p4n9.gif)
+variabel subscription akan menerima hasil dari listen, yang pada langkah 6 digunakan untuk memberhentikan subscription yang berarti widget tidak akan berlangganan perubahan pada aliran data setelah method dispose() dipanggil. Pada langkah 8 dilakukan kondisi dimana jika numberStramController.isClosed true maka lastNumber di set menjadi -1, dan jika false maka numberStreamm.addNumberToSink(myNum) akan dijalankan
+
