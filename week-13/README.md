@@ -60,3 +60,9 @@ penggunaan .asBroadcastStream() membuat stream menjadi bisa didengarkan oleh beb
 ### Soal 12
 ![soal12](docs/p6n12.gif)
 pada class NumberStream memiliki method getNumbers() yang digunakan untuk menghasilkan stream yang mengirimkan angka acak antara 0 sampai 9 setiap detik yang kemudian digunakan dalam widget menggunakan StreamBuilder di dalam file main.dart. Pada widget StreamBuilder, properti stream diatur sebagai hasil dari pemanggilan getNumbers() dari objek NumberStream. jika ada error, pesan "Error" akan diprint. Jika tidak ada data, widget akan mengembalikan SizedBox.shrink().
+
+## Praktikum 7
+
+### Soal 13
+![soal13](docs/p7n13.gif)
+- Konsep BLoC diterapkan melalui class RandomNumberBloc. class tersebut memiliki 2 controller stream, _generateRandomController untuk generate angka acak dan _randomNumberController untuk mengirimkan angka ke interface pengguna. Pada class RandomScreen, instance dari RandomNumberBloc disimpan dalam var _bloc. Widget menggunakan StreamBuilder untuk mendengarkan perubahan pada stream random number. ketika tombol ditekan, sink pada controller _generateRandomCOntroller akan terpicu dan akan menghasilkan angka acak, hal ini memicu logika BLoC.
