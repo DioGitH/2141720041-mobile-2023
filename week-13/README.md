@@ -46,3 +46,11 @@ pada langkah 1-3 menunjukkan penggunaan StreamTransformer yang digunakan untuk m
 ![soal9](docs/p4n9.gif)
 variabel subscription akan menerima hasil dari listen, yang pada langkah 6 digunakan untuk memberhentikan subscription yang berarti widget tidak akan berlangganan perubahan pada aliran data setelah method dispose() dipanggil. Pada langkah 8 dilakukan kondisi dimana jika numberStramController.isClosed true maka lastNumber di set menjadi -1, dan jika false maka numberStreamm.addNumberToSink(myNum) akan dijalankan
 
+## Praktikum 5
+
+### Soal 10
+error karena penggunaan subscription pada stream yang sama tanpa menutup subcription sebelumnya. Stream di flutter hanya dapat didengarkan oleh satu subscription pada satu waktu.
+
+### Soal 11
+![soal11](docs/p5n11.gif)
+penggunaan .asBroadcastStream() membuat stream menjadi bisa didengarkan oleh beberapa subscription sekaligus. ketika menggunakan broadcast stream, subscription akan mendapatkkan semua data yang dikirim melalui stream. pada setState, terjadi penambahan nilai ke variabel values. kedua subscription akan mengupdate values sehingga menyebabkan nilai terus bertambah karena kedua subscription akan memberikan nilai pada variabel yang sama.
