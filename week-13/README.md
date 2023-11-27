@@ -54,3 +54,9 @@ error karena penggunaan subscription pada stream yang sama tanpa menutup subcrip
 ### Soal 11
 ![soal11](docs/p5n11.gif)
 penggunaan .asBroadcastStream() membuat stream menjadi bisa didengarkan oleh beberapa subscription sekaligus. ketika menggunakan broadcast stream, subscription akan mendapatkkan semua data yang dikirim melalui stream. pada setState, terjadi penambahan nilai ke variabel values. kedua subscription akan mengupdate values sehingga menyebabkan nilai terus bertambah karena kedua subscription akan memberikan nilai pada variabel yang sama.
+
+## Praktikum 6
+
+### Soal 12
+![soal12](docs/p6n12.gif)
+pada class NumberStream memiliki method getNumbers() yang digunakan untuk menghasilkan stream yang mengirimkan angka acak antara 0 sampai 9 setiap detik yang kemudian digunakan dalam widget menggunakan StreamBuilder di dalam file main.dart. Pada widget StreamBuilder, properti stream diatur sebagai hasil dari pemanggilan getNumbers() dari objek NumberStream. jika ada error, pesan "Error" akan diprint. Jika tidak ada data, widget akan mengembalikan SizedBox.shrink().
