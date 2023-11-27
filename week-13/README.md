@@ -34,3 +34,9 @@ Pada langkah 10 addRandomNumber() digunakan untuk mneghasilkan bilangan acak ant
 ### Soal 7
 method addError() digunakan untuk menambahkan pesan error ke dalam sink yang terkait dengan controller. method onError ditambahkan ke hasil pemanggilan listen pada objek stream untuk penanganan error. Ketika error, callback onError akan dijalankan dan akan mengubah state widget dengan menetapkan nilai lastNumber menjadi -1.
 
+## Praktikum 3
+
+### Soal 8
+![soal8](docs/p3n8.gif)
+pada langkah 1-3 menunjukkan penggunaan StreamTransformer yang digunakan untuk mengubah nilai dalam aliran data numerik dengan mengkalikannya dengan 10, serta memberikan penanganan error untuk mengatasi error pada proses transformasi.
+
